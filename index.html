@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>یزد مِلک | سیستم توصیه‌گر هوشمند</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/iranyekan');
+        body { font-family: 'Inter', Tahoma, sans-serif; background-color: #f8fafc; }
+    </style>
+</head>
+<body>
+    <nav class="bg-blue-900 text-white p-4 shadow-lg">
+        <h1 class="text-2xl font-bold text-center">هوش مصنوعی املاک یزد</h1>
+    </nav>
+
+    <main class="container mx-auto p-6">
+        <section id="selection" class="mb-10">
+            <h2 class="text-xl mb-4 border-r-4 border-blue-600 pr-2">ملک مورد نظر خود را انتخاب کنید:</h2>
+            <div id="property-list" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                </div>
+        </section>
+
+        <section id="recommendations" class="hidden">
+            <h2 class="text-xl mb-4 border-r-4 border-green-600 pr-2 text-green-700">موارد مشابه پیشنهادی برای شما:</h2>
+            <div id="rec-list" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+        </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
